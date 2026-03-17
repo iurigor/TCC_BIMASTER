@@ -1,7 +1,7 @@
-# Título do Trabalho
+# Predição de Séries Temporais Intraday de Ações Utilizando Redes Neurais Profundas: Uma Abordagem com LSTM e Transformers com Time2Vec Aplicada à PETR4
 
-#### Alun(o/a): [Igor de Moraes Ferreira](https://github.com/iurigor).
-#### Orientador(/a/es/as): [Manoela kohler](https://github.com/manoelakohler).
+#### Aluno: [Igor de Moraes Ferreira](https://github.com/iurigor).
+#### Orientadora: [Manoela kohler](https://github.com/manoelakohler).
 
 ---
 
