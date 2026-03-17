@@ -1,48 +1,27 @@
-<!-- antes de enviar a versão final, solicitamos que todos os comentários, colocados para orientação ao aluno, sejam removidos do arquivo -->
-
 # Título do Trabalho
 
-#### Alun(o/a): [Nome Sobrenome](https://github.com/link_do_github).
-#### Orientador(/a/es/as): [Nome Sobrenome](https://github.com/link_do_github).
-#### Co-orientador(/a/es/as): [Nome Sobrenome](https://github.com/link_do_github). <!-- caso não aplicável, remover esta linha -->
+#### Alun(o/a): [Igor de Moraes Ferreira](https://github.com/iurigor).
+#### Orientador(/a/es/as): [Manoela kohler](https://github.com/manoelakohler).
 
 ---
 
 Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
 
-- [Link para o código](https://github.com/link_do_repositorio/nome_do_arquivo_de_codigo). <!-- caso não aplicável, remover esta linha -->
-
-- [Link para a monografia](https://link_da_monografia.com). <!-- caso não aplicável, remover esta linha -->
-
-- Trabalhos relacionados: <!-- caso não aplicável, remover estas linhas -->
-    - [Nome do Trabalho 1](https://link_do_trabalho.com).
-    - [Nome do Trabalho 2](https://link_do_trabalho.com).
-
 ---
 
 ### Resumo
 
-<!-- trocar o texto abaixo pelo resumo do trabalho, em português -->
+Este trabalho tem como objetivo investigar o uso de técnicas de aprendizado profundo para a predição de séries temporais financeiras intraday, utilizando dados da ação PETR4 negociada na bolsa brasileira. A proposta consiste na aplicação e comparação de modelos baseados em Redes Neurais Recorrentes do tipo Long Short-Term Memory (LSTM) e arquiteturas baseadas em Transformers enriquecidas com codificação temporal por meio do método Time2Vec.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
+Foram utilizados dados históricos de preços de fechamento em intervalos de 15 minutos, juntamente com variáveis derivadas, como indicadores técnicos e componentes cíclicos intraday, incluindo transformações senoidais da hora de negociação. O processo de modelagem envolveu etapas de pré-processamento, normalização dos dados, criação de janelas temporais de entrada e definição de horizontes de previsão de curto prazo.
 
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
+Os modelos foram avaliados com base em métricas tradicionais de regressão, como erro médio absoluto (MAE) e erro quadrático médio (RMSE), além da acurácia direcional, considerada particularmente relevante no contexto financeiro. A incorporação do Time2Vec permitiu ao modelo Transformer capturar padrões temporais periódicos de forma mais eficiente, enquanto o modelo LSTM serviu como baseline para comparação de desempenho.
 
-Donec molestie, ante quis tempus consequat, mauris ante fringilla elit, euismod hendrerit leo erat et felis. Mauris faucibus odio est, non sagittis urna maximus ut. Suspendisse blandit ligula pellentesque tincidunt malesuada. Sed at ornare ligula, et aliquam dui. Cras a lectus id turpis accumsan pellentesque ut eget metus. Pellentesque rhoncus pellentesque est et viverra. Pellentesque non risus velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-### Abstract <!-- Opcional! Caso não aplicável, remover esta seção -->
-
-<!-- trocar o texto abaixo pelo resumo do trabalho, em inglês -->
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
-
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
-
-Donec molestie, ante quis tempus consequat, mauris ante fringilla elit, euismod hendrerit leo erat et felis. Mauris faucibus odio est, non sagittis urna maximus ut. Suspendisse blandit ligula pellentesque tincidunt malesuada. Sed at ornare ligula, et aliquam dui. Cras a lectus id turpis accumsan pellentesque ut eget metus. Pellentesque rhoncus pellentesque est et viverra. Pellentesque non risus velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Os resultados indicam que arquiteturas baseadas em atenção, quando combinadas com representações temporais adequadas, apresentam potencial para capturar dinâmicas complexas do mercado intraday. No entanto, destaca-se a dificuldade inerente à previsão de preços financeiros, caracterizados por alta volatilidade e baixo sinal preditivo. Ainda assim, observa-se ganho incremental na acurácia direcional em comparação com abordagens tradicionais, sugerindo a viabilidade do uso dessas técnicas em apoio à tomada de decisão no mercado financeiro.
 
 ---
 
-Matrícula: 123.456.789
+Matrícula: 252.100.428
 
 Pontifícia Universidade Católica do Rio de Janeiro
 
